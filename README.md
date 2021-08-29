@@ -14,7 +14,7 @@ Datasets from: https://www.kaggle.com/ruchi798/movies-on-netflix-prime-video-hul
 1. ชื่อ นาย ภูนนท์ นามสกุล ศรีวรลักขณา    StudentID: 63130500093
 2. ชื่อ นาย อธิติ  นามสกุล คงสบสิน    StudentID: 63130500128
 3. ชื่อ นางสาว กชกร วงค์ทิพย์     StudentID: 63130500137
-4. ชื่อ นาย ดรัณ นามสกุล     StudentID: 63130500141
+4. ชื่อ นาย ดรัณ มหาวนากูล     StudentID: 63130500141
 5. ชื่อ นางสาว หทัยวรรณ นามสกุล     StudentID: 63130500161
 
 ### Instructor
