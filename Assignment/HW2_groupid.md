@@ -5,7 +5,7 @@ Explore 2 dataset that given then finding descriptive statistics and summary res
 
 1.) หาแมวเพศผู้และเพศเมียว่ามีอย่างละกี่ตัว
 ```{R}
-summary(cats$sex)
+table(cats$sex)
 ```
 
 2.) มีจำนวนนักศึกษาแต่ละคนสูบบุหรี่ปริมาณเท่าไหร่
@@ -29,6 +29,15 @@ ratio <- cats$Bwt/(cats$Hwt/1000)
 mean(ratio)
 ```
 
+6.) ความถี่ของนักศึกษาที่ออกกำลังกาย
+```{R}
+summary(survey$Exer)
+```
+
+7.) นักศึกษาส่วนใหญ่ถนัดมือข้างไหน และเป็นจำนวนเท่าไหร่
+```{R}
+Mode(survey$W.Hnd,na.rm=TRUE)
+```
 
 ### Team: ภูอธิหทัยกชรัณ
 
