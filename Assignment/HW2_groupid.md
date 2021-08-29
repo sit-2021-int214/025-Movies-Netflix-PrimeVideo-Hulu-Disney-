@@ -3,14 +3,30 @@ Explore 2 dataset that given then finding descriptive statistics and summary res
 
 ### Answer
 
-1.) From survey, most students use left hand writing.
+1.) หาแมวเพศผู้และเพศเมียว่ามีอย่างละกี่ตัว
 ```{R}
-Code here
+summary(cats$sex)
 ```
 
-2.) Descriptive statistics Statement
+2.) มีจำนวนนักศึกษาแต่ละคนสูบบุหรี่ปริมาณเท่าไหร่
 ```{R}
-Code here
+summary(survey$Smoke)
+```
+
+3.) อายุเฉลี่ยของนักศึกษา
+```{R}
+mean(survey$Age)
+```
+
+4.) นักศึกษาที่มีความสูงมากสุดคือเท่าไหร่
+```{R}
+max(survey$Height,na.rm=TRUE)
+```
+
+5.) ค่าเฉลี่ยของน้ำหนักตัวต่อน้ำหนักหัวใจของแมวเป็นเท่าไหร่
+```{R}
+ratio <- cats$Bwt/(cats$Hwt/1000)
+mean(ratio)
 ```
 
 
@@ -20,4 +36,4 @@ Code here
 2. ชื่อ นาย อธิติ  นามสกุล คงสบสิน    StudentID: 63130500128
 3. ชื่อ นางสาว กชกร วงค์ทิพย์     StudentID: 63130500137
 4. ชื่อ นาย ดรัณ มหาวนากูล     StudentID: 63130500141
-5. ชื่อ นางสาว หทัยวรรณ เมฆวี     StudentID: 63130500161
+5. ชื่อ นางสาว หทัยวรรณ เมฆวี     StudentID: 63130500160
