@@ -10,10 +10,10 @@ Datasets from: https://www.kaggle.com/ruchi798/movies-on-netflix-prime-video-hul
 
 ## About Us
 งานนี้เป็นส่วนของวิชา INT214 Statistics for Information technology <br/> ภาคเรียนที่ 1 ปีการศึกษา 2564 คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
-### Team: xxxxxxx
+### Team: ภูอธิหทัยกชรัณ
 1. ชื่อ นาย ภูนนท์ นามสกุล ศรีวรลักขณา    StudentID: 63130500093
 2. ชื่อ นาย อธิติ  นามสกุล คงสบสิน    StudentID: 63130500128
-3. ชื่อ นางสาว กชกร นามสกุล     StudentID: 63130500137
+3. ชื่อ นางสาว กชกร วงค์ทิพย์     StudentID: 63130500137
 4. ชื่อ นาย ดรัณ นามสกุล     StudentID: 63130500141
 5. ชื่อ นางสาว หทัยวรรณ นามสกุล     StudentID: 63130500161
 
