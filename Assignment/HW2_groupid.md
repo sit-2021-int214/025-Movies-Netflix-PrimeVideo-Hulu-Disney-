@@ -38,7 +38,7 @@ summary(survey$Exer)
 ```{R}
 length(grep("Freq", survey$Exer))+length(grep("Some", survey$Exer))
 ```
-Or
+OR
 ```{R}
 Exercises <- length(grep("Freq", survey$Exer))+length(grep("Some", survey$Exer))
 Exercises
