@@ -29,14 +29,19 @@ ratio <- cats$Bwt/(cats$Hwt/1000)
 mean(ratio)
 ```
 
-6.) ความถี่ของนักศึกษาที่ออกกำลังกาย
+6.) จำนวนนักศึกษาที่ออกกำลังกาย
 ```{R}
 summary(survey$Exer)
 ```
 
 7.) นักศึกษาส่วนใหญ่ถนัดมือข้างไหน และเป็นจำนวนเท่าไหร่
 ```{R}
-Mode(survey$W.Hnd,na.rm=TRUE)
+length(grep("Freq", survey$Exer))+length(grep("Some", survey$Exer))
+```
+Or
+```{R}
+Exercises <- length(grep("Freq", survey$Exer))+length(grep("Some", survey$Exer))
+Exercises
 ```
 
 ### Team: ภูอธิหทัยกชรัณ
