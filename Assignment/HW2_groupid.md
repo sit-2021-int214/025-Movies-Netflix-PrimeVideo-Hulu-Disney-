@@ -31,17 +31,17 @@ mean(ratio)
 
 6.) จำนวนนักศึกษาที่ออกกำลังกาย
 ```{R}
-summary(survey$Exer)
-```
-
-7.) นักศึกษาส่วนใหญ่ถนัดมือข้างไหน และเป็นจำนวนเท่าไหร่
-```{R}
 length(grep("Freq", survey$Exer))+length(grep("Some", survey$Exer))
 ```
 OR
 ```{R}
 Exercises <- length(grep("Freq", survey$Exer))+length(grep("Some", survey$Exer))
 Exercises
+```
+
+7.) นักศึกษาส่วนใหญ่ถนัดมือข้างไหน และเป็นจำนวนเท่าไหร่
+```{R}
+Mode(survey$W.Hnd,na.rm=TRUE)
 ```
 
 ### Team: ภูอธิหทัยกชรัณ
