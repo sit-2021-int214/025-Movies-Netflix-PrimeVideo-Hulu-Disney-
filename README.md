@@ -20,7 +20,7 @@ Datasets from: https://www.kaggle.com/ruchi798/movies-on-netflix-prime-video-hul
 - Excel
 
 ## Table of Contents
-1.[Exploratory Data Analysis](./Assignment/WS01_studentid/WS01_63130500093.md)
+1.[Exploratory Data Analysis](./01_explore.md)
 2.
 
 ## Resources
