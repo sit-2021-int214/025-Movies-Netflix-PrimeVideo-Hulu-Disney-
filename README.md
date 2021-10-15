@@ -21,13 +21,15 @@ Datasets from: https://www.kaggle.com/ruchi798/movies-on-netflix-prime-video-hul
 
 ## Table of Contents
 1.[Exploratory Data Analysis](./01_explore.md)
-2.
+2.[Data Visualization](./01_explore.md) ---> อันนี้เป็นงานของ Final Assignment นะครับพี่แค่แปะหัวข้อตัวอย่างไว้
 
 ## Resources
 ## Important Files in Repository
-
+- [code_eda.R](./code_eda.R): Exploratory Data Analysis
+- [products_original.csv](./products_original.csv): Original Dataset
+- [products_clean.csv](./products_original.csv): Clean Dataset
 ## References
-
+//Link
 ## About Us
 งานนี้เป็นส่วนของวิชา INT214 Statistics for Information technology <br/> ภาคเรียนที่ 1 ปีการศึกษา 2564 คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
 ### Team: ภูอธิหทัยกชรัณ
