@@ -37,7 +37,7 @@ Netflix, Hulu, Prime Video, Disney+, Type, Directors, Genres, Country, Language 
 ## Resources
 ## Important Files in Repository
 - [code_eda.R](./code_eda.R): Exploratory Data Analysis
-- [products_original.csv](./MoviesOnStreamingPlatforms_original.csv): Original Dataset
+- [products_original.csv](./Movies-Netflix-PrimeVideo-Hulu-Disney-original.csv): Original Dataset
 - [products_clean.csv](./products_original.csv): Clean Dataset
 ## References
 //Link
