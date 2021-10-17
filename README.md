@@ -3,13 +3,12 @@
 Datasets from: https://www.kaggle.com/ruchi798/movies-on-netflix-prime-video-hulu-and-disney
 
 ## About's Products Datasets
-
+Movies_Netflix_PrimeVideo_Hulu_Disney+ เป็นชุดข้อมูลที่เกี่ยวกับ collection ของภาพยนตร์ที่พบใน platforms เหล่านี้ ซึ่งจะประกอบไปด้วย ID, Title, Year, Age, IMDb, Rotten Tomatoes, 
+Netflix, Hulu, Prime Video, Disney+, Type, Directors, Genres, Country, Language และ Runtime
 ## Overview
 เหตุผลที่กลุ่มเราเลือก dataset เกี่ยวกับภาพยนตร์เพราะว่าสมาชิกทุกคนภายในกลุ่มมีความชื่นชอบและสนใจ
 เกี่ยวกับภาพยนตร์เป็นอย่างมาก โดย dataset ที่ได้เลือกมาก็ค่อนข้างมีความหลากหลายและครอบคลุมพอที่จะ
-สามารถใช้ในการเปรียบเทียบข้อมูลทั้งในรูปแบบที่เป็นตัวเลขและในรูปแบบที่เป็น text ซึ่งทางกลุ่มของเราก็
-อยากจะทราบว่าภาพยนตร์แต่ละประเภทจากหลายๆ platform ได้รับคะแนนจาก IMDb และ rotten
-tomatoes เท่าไหร่บ้าง จึงทำการได้เลือก dataset นี้มา
+สามารถใช้ในการเปรียบเทียบข้อมูลทั้งในรูปแบบที่เป็นตัวเลขและในรูปแบบที่เป็น text จึงทำการได้เลือก dataset นี้มา
 สิ่งที่อยากวิเคราะห์จากข้อมูลชุดนี้ ได้แก่
 1. ภาพยนตร์ไหนที่ได้รับคะแนนจาก IMDb และ rotten tomatoes สูงสุด
 2. คะแนนจากนักวิจารณ์ภาพยนตร์ไปในทิศทางเดียวกันกับคะแนนคนดูธรรมดาหรือไม่
