@@ -19,7 +19,6 @@ Dataset from [Movies_Netflix_PrimeVideo_Hulu_Disney+.csv](../../Movies-Netflix-P
 6. หาหนังในประเทศ USA ทุกเรื่องที่ฉายมากกว่า 1 ภาษา ?
 7. directors ที่ชื่อว่า A.L. Vijay กำกับหนังมาแล้วกี่เรื่องและเรื่องอะไรบ้าง ?
 
-Can add more question ....
 
 ## Step 0: Loading library and dataset
 
