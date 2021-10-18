@@ -11,13 +11,6 @@ Dataset from [Movies_Netflix_PrimeVideo_Hulu_Disney+.csv](../../Movies-Netflix-P
 
 ## Define a question
 
-1. How many observation of this dataset (before cleaning) ?
-2. Are there duplicate data sets ? (If have duplicate data, list the data that duplicate)
-3. How many distinct school in this dataset ? (Know after drop duplicate data)
-4. What is min, max, average, quartile of each part in SAT ?
-5. What is min, max, average, quartile of total score in SAT ?
-6. Which school is get highest SAT score ?
-#
 1. หาค่าเฉลี่ยของ IMDb ว่ามีค่าเฉลี่ยเป็นเท่าไหร่ ?
 2. หาค่าเฉลี่ยของ Rotten Tomatoes ว่ามีค่าเฉลี่ยเป็นเท่าไหร่ ?
 3. ค่าเฉลี่ยของ  IMDb และ  Rotten Tomatoes รวมกันเป็นเท่าไหร่ ?
@@ -69,7 +62,7 @@ $ Runtime         <int> 209, 161, 83, 224, 52, 99, 94, 120, 133, 129, 130, 94,~
 
 ###
 
-#### Cleaning dataset:
+## Cleaning dataset:
 ```
 movies$Age<- movies$Age%>%replace(is.na(movies$Age),"all")
 movies$Directors <- movies$Directors%>%replace(is.na(movies$Directors),"UNKNOWN")
@@ -80,7 +73,7 @@ movies$Runtime<- movies$Runtime%>%replace(is.na(movies$Runtime),0)
 movies$Genres <- movies$Genres%>%replace(is.na(movies$Genres),"UNKNOWN")
 movies$Language <- movies$Language%>%replace(is.na(movies$Language),"UNKNOWN")
 ```
-#### Explain:
+### Explain:
 - แก้ column Age ที่ไม่มีข้อมูลอายุ(NA) ให้เป็น "all" ทั้งหมด
 - แก้ column Directors ที่ไม่มีผู้กำกับ(NA) ให้เป็น "UNKNOWN" ทั้งหมด
 - แก้ column IMDb ที่ไม่มีคะแนน(NA) ให้เป็น "0/10" ทั้งหมด
