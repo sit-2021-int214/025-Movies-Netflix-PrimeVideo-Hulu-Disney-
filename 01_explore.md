@@ -72,6 +72,11 @@ movies$Runtime<- movies$Runtime%>%replace(is.na(movies$Runtime),0)
 movies$Genres <- movies$Genres%>%replace(is.na(movies$Genres),"UNKNOWN")
 movies$Language <- movies$Language%>%replace(is.na(movies$Language),"UNKNOWN")
 ```
+### Format Score
+###
+movies$`Rotten Tomatoes`<- movies$`Rotten Tomatoes`%>%str_remove("/100")%>%str_trim()%>%as.numeric()
+movies$IMDb <- movies$IMDb%>% str_remove("/10")%>%str_trim()%>%as.numeric()```
+
 ### Explain:
 - แก้ column Age ที่ไม่มีข้อมูลอายุ(NA) ให้เป็น "all" ทั้งหมด
 - แก้ column Directors ที่ไม่มีผู้กำกับ(NA) ให้เป็น "UNKNOWN" ทั้งหมด
