@@ -75,7 +75,7 @@ movies$Language <- movies$Language%>%replace(is.na(movies$Language),"UNKNOWN")
 ### Format Score
 ```
 movies$`Rotten Tomatoes`<- movies$`Rotten Tomatoes`%>%str_remove("/100")%>%str_trim()%>%as.numeric()
-movies$IMDb <- movies$IMDb%>% str_remove("/10")%>%str_trim()%>%as.numeric()```
+movies$IMDb <- movies$IMDb%>% str_remove("/10")%>%str_trim()%>%as.numeric()
 
 ### Explain:
 - แก้ column Age ที่ไม่มีข้อมูลอายุ(NA) ให้เป็น "all" ทั้งหมด
@@ -86,7 +86,7 @@ movies$IMDb <- movies$IMDb%>% str_remove("/10")%>%str_trim()%>%as.numeric()```
 - แก้ column Runtime ที่ไม่ระบุความยาวของหนัง(NA) ให้เป็น "0" ทั้งหมด
 - แก้ column Genres ที่ไม่ระบุประเภทของหนัง(NA) ให้เป็น "UNKNOWN" ทั้งหมด
 - แก้ column Language ที่ไม่ระบุภาษาของหนัง(NA) ให้เป็น "UNKNOWN" ทั้งหมด
-
+```
 ## Step 2: Data Analysis with Descriptive Statistics
 
 ### 2.1. หาค่าเฉลี่ยของ IMDb ว่ามีค่าเฉลี่ยเป็นเท่าไหร่ ?
