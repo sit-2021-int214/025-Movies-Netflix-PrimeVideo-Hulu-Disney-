@@ -1,4 +1,4 @@
-# Workshop 01 EDA: Movies_Netflix_PrimeVideo_Hulu_Disney+
+# Workshop 01 EDA: Movies_Netflix_PrimeVideo_Hulu_Disney+📌
 
 Dataset from [Movies_Netflix_PrimeVideo_Hulu_Disney+.csv](../../Movies-Netflix-PrimeVideo-Hulu-Disney-original.csv)
 
