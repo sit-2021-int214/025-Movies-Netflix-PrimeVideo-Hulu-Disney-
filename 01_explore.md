@@ -2,9 +2,6 @@
 
 Dataset from [Movies_Netflix_PrimeVideo_Hulu_Disney+.csv](../../Movies-Netflix-PrimeVideo-Hulu-Disney-original.csv)
 
-![..](https://media.giphy.com/media/3ClZRV9NbqRO3VxDLA/giphy.gif)
-
-
 ### My Step ⚙️
 1. Define a question 🛠
 2. Loading Library and dataset 📡
@@ -146,11 +143,11 @@ $ Runtime           <dbl> 209, 161, 83, 224, 52, 99, 94, 120, 133, 129, 130…
 
 ```
 ### Format Score ###
-จัด format ของคะแนน Rotten Tomatoes โดยลบ /100 ที่เป็นคะแนนเต็มออก และเปลี่ยน datatype จาก character เป็น numeric
+- จัด format ของคะแนน Rotten Tomatoes โดยลบ /100 ที่เป็นคะแนนเต็มออก และเปลี่ยน datatype จาก character เป็น numeric
 ```
 movies$`Rotten Tomatoes`<- movies$`Rotten Tomatoes`%>%str_remove("/100")%>%str_trim()%>%as.numeric()
 ```
-จัด format ของคะแนน IMDb โดยลบ /10 ที่เป็นคะแนนเต็มออก และเปลี่ยน datatype จาก character เป็น numeric
+- จัด format ของคะแนน IMDb โดยลบ /10 ที่เป็นคะแนนเต็มออก และเปลี่ยน datatype จาก character เป็น numeric
 ```
 movies$IMDb <- movies$IMDb%>% str_remove("/10")%>%str_trim()%>%as.numeric()
 ```
