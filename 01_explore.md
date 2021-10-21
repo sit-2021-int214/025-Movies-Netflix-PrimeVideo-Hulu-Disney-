@@ -7,9 +7,11 @@ Dataset from [Movies_Netflix_PrimeVideo_Hulu_Disney+.csv](../../Movies-Netflix-P
 ### My Step
 1. Define a question
 2. Loading Library and dataset
-3. xxxxxxx
+3. Observation of this dataset before cleaning
+4. Cleaning dataset
+5. Data Analysis with Descriptive Statistics
 
-## 1.Define a question
+## Step 1: Define a question
 
 1. หาค่าเฉลี่ยของ IMDb ว่ามีค่าเฉลี่ยเป็นเท่าไหร่ ?
 2. หาค่าเฉลี่ยของ Rotten Tomatoes ว่ามีค่าเฉลี่ยเป็นเท่าไหร่ ?
@@ -20,7 +22,7 @@ Dataset from [Movies_Netflix_PrimeVideo_Hulu_Disney+.csv](../../Movies-Netflix-P
 7. directors ที่ชื่อว่า A.L. Vijay กำกับหนังมาแล้วกี่เรื่องและเรื่องอะไรบ้าง ?
 
 
-## Step 0: Loading library and dataset
+## Step 2: Loading library and dataset
 
 ```
 # Library
@@ -31,7 +33,7 @@ library(dplyr)
 movies <- read_csv("MoviesOnStreamingPlatforms_updated.csv")
 ```
 
-## Step 1: Observation of this dataset before cleaning.
+## Step 3: Observation of this dataset before cleaning
 ```
 glimpse(movies)
 ```
@@ -61,7 +63,7 @@ $ Runtime         <int> 209, 161, 83, 224, 52, 99, 94, 120, 133, 129, 130, 94,~
 
 ###
 
-## Cleaning dataset:
+## Step 4: Cleaning dataset
 ```
 movies$Age<- movies$Age%>%replace(is.na(movies$Age),"all")
 movies$Directors <- movies$Directors%>%replace(is.na(movies$Directors),"UNKNOWN")
@@ -87,9 +89,9 @@ movies$IMDb <- movies$IMDb%>% str_remove("/10")%>%str_trim()%>%as.numeric()
 - แก้ column Genres ที่ไม่ระบุประเภทของหนัง(NA) ให้เป็น "UNKNOWN" ทั้งหมด
 - แก้ column Language ที่ไม่ระบุภาษาของหนัง(NA) ให้เป็น "UNKNOWN" ทั้งหมด
 
-## Step 2: Data Analysis with Descriptive Statistics
+## Step 5: Data Analysis with Descriptive Statistics
 
-### 2.1. หาค่าเฉลี่ยของ IMDb ว่ามีค่าเฉลี่ยเป็นเท่าไหร่ ?
+### 5.1. หาค่าเฉลี่ยของ IMDb ว่ามีค่าเฉลี่ยเป็นเท่าไหร่ ?
 ```
 IMDb_avg<-(movies%>% select(IMDb)%>% filter(movies$IMDb>0)%>%sum() ) / count(movies)
 ```
@@ -97,7 +99,7 @@ Result:```6.023027```
 
 ค่าเฉลี่ยของ IMDb มีค่าเท่ากับ 6.023027
 
-### 2.2. หาค่าเฉลี่ยของ Rotten Tomatoes ว่ามีค่าเฉลี่ยเป็นเท่าไหร่ ?
+### 5.2. หาค่าเฉลี่ยของ Rotten Tomatoes ว่ามีค่าเฉลี่ยเป็นเท่าไหร่ ?
 ```
 rotten_avg<-(movies%>% select(`Rotten Tomatoes`)%>% filter(movies$`Rotten Tomatoes`>0)%>%
 sum() ) / count(movies)
@@ -106,7 +108,7 @@ Result:```53.50562```
 
 ค่าเฉลี่ยของ Rotten Tomatoes มีค่าเท่ากับ 53.50562
 
-### 2.3. ค่าเฉลี่ยของ  IMDb และ  Rotten Tomatoes รวมกันเป็นเท่าไหร่ ?
+### 5.3. ค่าเฉลี่ยของ  IMDb และ  Rotten Tomatoes รวมกันเป็นเท่าไหร่ ?
 ```
 avg<-(rotten_avg+(IMDb_avg*10))/2
 ```
@@ -114,7 +116,7 @@ Result:```56.86795```
 
 ค่าเฉลี่ยของ IMDb และ Rotten Tomatoes รวมกันมีค่าเท่ากับ 56.86795
 
-### 2.4. หาหนังที่อยู่ในปี 1990 - 2000 ว่ามีกี่เรื่อง ?
+### 5.4. หาหนังที่อยู่ในปี 1990 - 2000 ว่ามีกี่เรื่อง ?
 ```
 movie_90 <- movies%>%select(Year)%>%filter(movies$Year<=2000 & movies$Year>=1990)%>%count()
 ```
@@ -122,7 +124,7 @@ Result:```582```
 
 หนังที่อยู่ในปี 1990 - 2000 มีทั้งหมด 582 เรื่อง
 
-### 2.5.  หนังแต่ละเรทอายุมีทั้งหมดกี่เรื่อง ?
+### 5.5.  หนังแต่ละเรทอายุมีทั้งหมดกี่เรื่อง ?
 ```
 movies%>% select(Age) %>% table()
 ```
@@ -133,7 +135,7 @@ Result:
 ```
 หนังที่อยู่ในเรทอายุ 13+ มี 998 เรื่อง หนังที่อยู่ในเรทอายุ 16+ มี 276 เรื่อง หนังที่อยู่ในเรทอายุ 18+ มี 2276 เรื่อง หนังที่อยู่ในเรทอายุ 7+ มี 1090 เรื่อง และ หนังที่สามารถดูได้ทุกวัย มี 4875 เรื่อง
 
-### 2.6. หาหนังในประเทศ USA ทุกเรื่องที่ฉายมากกว่า 1 ภาษา ?
+### 5.6. หาหนังในประเทศ USA ทุกเรื่องที่ฉายมากกว่า 1 ภาษา ?
 ```
 table(grepl("United States",movies$Country)& grepl(",",movies$Language) )
 ```
@@ -144,7 +146,7 @@ FALSE   TRUE
 ```
 หนังในประเทศ USA ที่ฉายมากกว่า 1 ภาษามีอยู่ 1052 เรื่อง
 
-### 2.7. directors ที่ชื่อว่า A.L. Vijay กำกับหนังมาแล้วกี่เรื่องและเรื่องอะไรบ้าง ?
+### 5.7. directors ที่ชื่อว่า A.L. Vijay กำกับหนังมาแล้วกี่เรื่องและเรื่องอะไรบ้าง ?
 ```
 director<-movies %>% select(Title,Directors)%>%filter(movies$Directors =="A.L. Vijay")
 
