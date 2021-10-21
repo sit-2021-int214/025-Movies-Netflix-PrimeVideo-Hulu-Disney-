@@ -90,37 +90,49 @@ movies <- select(movies,-c(Type))
 ```
 movies<- select(movies,-c(...1))
 ```
-4.3 แก้ column Age ที่ไม่มีข้อมูลอายุ(NA) ให้เป็น "all" ทั้งหมด
+4.3 check column Age ว่ามีค่า NA ไหม เนื่องจากใน column Age มีค่า NA จึงแก้ column Age ที่ไม่มีข้อมูลอายุ(NA) ให้เป็น "all" ทั้งหมด
 ```
+print(any(is.na(movies$Age))) #FALSE
 movies$Age<- movies$Age%>%replace(is.na(movies$Age),"all")
 ```
-4.4 แก้ column Directors ที่ไม่มีผู้กำกับ(NA) ให้เป็น "UNKNOWN" ทั้งหมด
+4.4 check column Directors ว่ามีค่า NA ไหม เนื่องจากใน column Directors มีค่า NA จึงแก้ column Directors ที่ไม่มีผู้กำกับ(NA) ให้เป็น "UNKNOWN" ทั้งหมด
 ```
+print(any(is.na(movies$Directors))) #FALSE
 movies$Directors <- movies$Directors%>%replace(is.na(movies$Directors),"UNKNOWN")
 ```
-4.5 แก้ column IMDb ที่ไม่มีคะแนน(NA) ให้เป็น "0/10" ทั้งหมด
+4.5 check column IMDb ว่ามีค่า NA ไหม เนื่องจากใน column IMDb มีค่า NA จึงแก้ column IMDb ที่ไม่มีคะแนน(NA) ให้เป็น "0/10" ทั้งหมด
 ```
+print(any(is.na(movies$IMDb))) #FALSE
 movies$IMDb<- movies$IMDb%>% replace(is.na(movies$IMDb),"0/10")
 ```
-4.6 แก้ column Rotten Tomatoes ที่ไม่มีคะแนน(NA) ให้เป็น "0/100" ทั้งหมด
+4.6  check column Rotten Tomatoes ว่ามีค่า NA ไหม เนื่องจากใน column Rotten Tomatoes มีค่า NA จึงแก้ column Rotten Tomatoes ที่ไม่มีคะแนน(NA) ให้เป็น "0/100" ทั้งหมด
 ```
+print(any(is.na(movies$`Rotten Tomatoes`))) #FALSE
 movies$`Rotten Tomatoes`<- movies$`Rotten Tomatoes`%>% replace(is.na(movies$`Rotten Tomatoes`),"0/100")
 ```
-4.7 แก้ column Country ที่ไม่ระบุประเทศ(NA) ให้เป็น "UNKNOWN" ทั้งหมด
+4.7  check column Country ว่ามีค่า NA ไหม เนื่องจากใน column Country มีค่า NA จึงแก้ column Country ที่ไม่ระบุประเทศ(NA) ให้เป็น "UNKNOWN" ทั้งหมด
 ```
+print(any(is.na(movies$Country))) #FALSE
 movies$Country<- movies$Country%>%replace(is.na(movies$Country),"UNKNOWN")
 ```
-4.8 แก้ column Runtime ที่ไม่ระบุความยาวของหนัง(NA) ให้เป็น "0" ทั้งหมด
+4.8  check column Runtime ว่ามีค่า NA ไหม เนื่องจากใน column Runtime มีค่า NA จึงแก้ column Runtime ที่ไม่ระบุความยาวของหนัง(NA) ให้เป็น "0" ทั้งหมด
 ```
+print(any(is.na(movies$Runtime))) #FALSE
 movies$Runtime<- movies$Runtime%>%replace(is.na(movies$Runtime),0)
 ```
-4.9 แก้ column Genres ที่ไม่ระบุประเภทของหนัง(NA) ให้เป็น "UNKNOWN" ทั้งหมด
+4.9  check column Genres ว่ามีค่า NA ไหม เนื่องจากใน column Genres มีค่า NA จึงแก้ column Genres ที่ไม่ระบุประเภทของหนัง(NA) ให้เป็น "UNKNOWN" ทั้งหมด
 ```
+print(any(is.na(movies$Genres))) #FALSE
 movies$Genres <- movies$Genres%>%replace(is.na(movies$Genres),"UNKNOWN")
 ```
-4.10 แก้ column Language ที่ไม่ระบุภาษาของหนัง(NA) ให้เป็น "UNKNOWN" ทั้งหมด
+4.10  check column Language ว่ามีค่า NA ไหม เนื่องจากใน column Language มีค่า NA จึงแก้ column Language ที่ไม่ระบุภาษาของหนัง(NA) ให้เป็น "UNKNOWN" ทั้งหมด
 ```
+print(any(is.na(movies$Language))) #FALSE
 movies$Language <- movies$Language%>%replace(is.na(movies$Language),"UNKNOWN")
+```
+4.11 check ว่า dataset ที่นำมามีข้อมูลที่ซ้ำกันหรือไม่ ซึ่งในที่นี้ไม่มีข้อมูลที่ซ้ำกัน
+```
+movies%>%duplicated()%>% table() #FALSE
 ```
 Result:
 ```
