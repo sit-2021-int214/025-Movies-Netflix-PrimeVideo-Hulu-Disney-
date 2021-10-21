@@ -40,20 +40,17 @@ print(IMDb_avg)
 rotten_avg<-(movies%>% select(`Rotten Tomatoes`)%>% filter(movies$`Rotten Tomatoes`>0)%>%sum() ) / count(movies)
 print(rotten_avg)
 #3
-avg<-(rotten_avg+(IMDb_avg*10))/2
-print(avg)
-#4
 movie_90 <- movies%>%select(Year)%>%filter(movies$Year<=2000 & movies$Year>=1990)%>%count()
 print(movie_90)
-#5
+#4
  movies%>% select(Age) %>% table()
-#6
+#5
  #grepl ได้ true false
  #grep ได้ index
  #grep(l) (pattern, ค่าที่ตรวจสอบ)
 
  table(grepl("United States",movies$Country)& grepl(",",movies$Language) )
- #7
+ #6
  director<-movies %>% select(Title,Directors)%>%filter(movies$Directors =="A.L. Vijay")
  print(director)
  director%>% count()
