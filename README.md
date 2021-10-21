@@ -32,7 +32,7 @@ Netflix, Hulu, Prime Video, Disney+, Type, Directors, Genres, Country, Language 
 
 ## Table of Contents
 1. [Exploratory Data Analysis](./01_explore.md)
-2. [Data Visualization](./01_explore.md) ---> อันนี้เป็นงานของ Final Assignment นะครับพี่แค่แปะหัวข้อตัวอย่างไว้
+2. [Data Visualization](./01_explore.md)
 
 ## Resources
 ### Important Files in Repository
