@@ -81,14 +81,14 @@ movies$IMDb <- movies$IMDb%>% str_remove("/10")%>%str_trim()%>%as.numeric()
 ```
 Result:
 ```
-   ...1    ID Title           Year Age    IMDb `Rotten Tomatoe… Netflix  Hulu
-  <dbl> <dbl> <chr>          <dbl> <chr> <dbl>            <dbl>   <dbl> <dbl>
-1     0     1 The Irishman    2019 18+     7.8               98       1     0
-2     1     2 Dangal          2016 7+      8.4               97       1     0
-3     2     3 David Attenbo…  2020 7+      9                 95       1     0
-4     3     4 Lagaan: Once …  2001 7+      8.1               94       1     0
-5     4     5 Roma            2018 18+     7.7               94       1     0
-6     5     6 To All the Bo…  2018 13+     7.1               94       1     0
+IMDb `Rotten Tomatoe… Netflix  Hulu
+<dbl>            <dbl>   
+7.8               98     
+8.4               97      
+9                 95       
+8.1               94      
+7.7               94       
+7.1               94       
 
 ```
 ### Explain:
