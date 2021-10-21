@@ -9,7 +9,7 @@ Dataset from [Movies_Netflix_PrimeVideo_Hulu_Disney+.csv](../../Movies-Netflix-P
 2. Loading Library and dataset
 3. xxxxxxx
 
-## Define a question
+## 1.Define a question
 
 1. หาค่าเฉลี่ยของ IMDb ว่ามีค่าเฉลี่ยเป็นเท่าไหร่ ?
 2. หาค่าเฉลี่ยของ Rotten Tomatoes ว่ามีค่าเฉลี่ยเป็นเท่าไหร่ ?
@@ -153,7 +153,3 @@ Deiva Thirumagal    A.L. Vijay
 Abhinetri No. 1     A.L. Vijay
 ```
 directors ที่ชื่อว่า A.L. Vijay กำกับหนังมาแล้ว 3 เรื่อง ได้แก่ 1.Thaandavam  2. Deiva Thirumagal 3. Abhinetri No. 1 
-
-## Summary
-//Content
-
