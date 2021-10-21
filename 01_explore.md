@@ -1,15 +1,15 @@
-# EDA: Movies_Netflix_PrimeVideo_Hulu_Disney+📌
+# 📌EDA: Movies_Netflix_PrimeVideo_Hulu_Disney+ 
 
 Dataset from [Movies_Netflix_PrimeVideo_Hulu_Disney+.csv](../../Movies-Netflix-PrimeVideo-Hulu-Disney-original.csv)
 
-### My Step
+### My Step ⚙️
 1. Define a question
 2. Loading Library and dataset
 3. Observation of this dataset before cleaning
 4. Cleaning dataset
 5. Data Analysis with Descriptive Statistics
 
-## Step 1: Define a question
+## Step 1: Define a question 🛠
 
 1. หาค่าเฉลี่ยของ IMDb ว่ามีค่าเฉลี่ยเป็นเท่าไหร่ ?
 2. หาค่าเฉลี่ยของ Rotten Tomatoes ว่ามีค่าเฉลี่ยเป็นเท่าไหร่ ?
@@ -20,7 +20,7 @@ Dataset from [Movies_Netflix_PrimeVideo_Hulu_Disney+.csv](../../Movies-Netflix-P
 7. directors ที่ชื่อว่า A.L. Vijay กำกับหนังมาแล้วกี่เรื่องและเรื่องอะไรบ้าง ?
 
 
-## Step 2: Loading library and dataset
+## Step 2: Loading library and dataset 📡
 
 ```
 # Library
@@ -31,7 +31,7 @@ library(dplyr)
 movies <- read_csv("MoviesOnStreamingPlatforms_updated.csv")
 ```
 
-## Step 3: Observation of this dataset before cleaning
+## Step 3: Observation of this dataset before cleaning 🔦
 ```
 glimpse(movies)
 ```
@@ -80,7 +80,7 @@ $ Runtime         <int> 209, 161, 83, 224, 52, 99, 94, 120, 133, 129, 130, 94,~
 | 17   | Runtime           | ระยะเวลาที่ฉายหนังเรื่องนั้น | 
 
 
-## Step 4: Cleaning dataset
+## Step 4: Cleaning dataset 🧼
 ลบ column Type ออก เพราะว่าข้อมูลในตารางเป็น type movie หมด จึงแสดงค่าเป็น 0 ทั้งหมด
 ```
 movies <- select(movies,-c(Type))
@@ -142,7 +142,7 @@ $ Language          <chr> "English,Italian,Latin,Spanish,German", "Hindi,En…
 $ Runtime           <dbl> 209, 161, 83, 224, 52, 99, 94, 120, 133, 129, 130…
 
 ```
-### Format Score ###
+### Format Score 🧹###
 ```
 movies$`Rotten Tomatoes`<- movies$`Rotten Tomatoes`%>%str_remove("/100")%>%str_trim()%>%as.numeric()
 movies$IMDb <- movies$IMDb%>% str_remove("/10")%>%str_trim()%>%as.numeric()
@@ -159,7 +159,7 @@ IMDb          `Rotten Tomatoes`
 7.1                  94       
 
 ```
-## Step 5: Data Analysis with Descriptive Statistics
+## Step 5: Data Analysis with Descriptive Statistics 📇
 
 ### 5.1. หาค่าเฉลี่ยของ IMDb ว่ามีค่าเฉลี่ยเป็นเท่าไหร่ ?
 ```
