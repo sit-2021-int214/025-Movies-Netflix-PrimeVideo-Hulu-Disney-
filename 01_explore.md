@@ -1,7 +1,7 @@
 # 📌EDA: Movies_Netflix_PrimeVideo_Hulu_Disney+ 
 
 Dataset from [Movies_Netflix_PrimeVideo_Hulu_Disney+.csv](../../Movies-Netflix-PrimeVideo-Hulu-Disney-original.csv)
-![..](https://media.giphy.com/media/YNJXUzGMpdIrUpPZcU/giphy.gif)
+![..]()
 ### My Step ⚙️
 1. Define a question 🛠
 2. Loading Library and dataset 📡
