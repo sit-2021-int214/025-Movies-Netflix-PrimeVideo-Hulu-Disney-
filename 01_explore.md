@@ -61,24 +61,24 @@ $ Language        <chr> "English,Italian,Latin,Spanish,German", "Hindi,English~
 $ Runtime         <int> 209, 161, 83, 224, 52, 99, 94, 120, 133, 129, 130, 94,~
 ```
 
-| ลำดับ | ชื่อคอลัมน์              | คำอธิบาย         |  เก็บข้อมูลในรูปแบบ         | ตัวอย่างข้อมูล                        |
-| :--: | -------------------- | -----------     |  --------------------   | -------------------------------- |
-| 1    | ID                | | | |
-| 2    | Title             | | | |
-| 3    | Year              | | | |
-| 4    | Age               | | | |
-| 5    | IMDb              | | | |
-| 6    | Rotten.Tomatoes   | | | |
-| 7    | Netflix           | | | |
-| 8    | Hulu              | | | |
-| 9    | Prime.Video       | | | |
-| 10   | Disney.           | | | |
-| 11   | Type              | | | |
-| 12   | Directors         | | | |
-| 13   | Genres            | | | |
-| 14   | Country           | | | |
-| 15   | Language          | | | |
-| 16   | Runtime           | | | |
+| ลำดับ | ชื่อคอลัมน์              | คำอธิบาย         
+| :--: | -------------------- | -----------     
+| 1    | ID                | | 
+| 2    | Title             | | 
+| 3    | Year              | | 
+| 4    | Age               | | 
+| 5    | IMDb              | | 
+| 6    | Rotten.Tomatoes   | | 
+| 7    | Netflix           | | 
+| 8    | Hulu              | | 
+| 9    | Prime.Video       | | 
+| 10   | Disney.           | | 
+| 11   | Type              | | 
+| 12   | Directors         | | 
+| 13   | Genres            | | 
+| 14   | Country           | | 
+| 15   | Language          | | 
+| 16   | Runtime           | | 
 
 
 ## Step 4: Cleaning dataset
