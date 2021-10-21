@@ -24,7 +24,9 @@ Dataset from [Movies_Netflix_PrimeVideo_Hulu_Disney+.csv](../../Movies-Netflix-P
 ```
 # Library
 library(readr)
-library(dplyr)
+library(deplyr)
+library(assertive)
+library(stringr)
 
 # Dataset
 movies <- read_csv("MoviesOnStreamingPlatforms_updated.csv")
