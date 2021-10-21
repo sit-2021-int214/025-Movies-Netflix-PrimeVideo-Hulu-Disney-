@@ -35,7 +35,7 @@ Netflix, Hulu, Prime Video, Disney+, Type, Directors, Genres, Country, Language 
 2. [Data Visualization](./01_explore.md) ---> อันนี้เป็นงานของ Final Assignment นะครับพี่แค่แปะหัวข้อตัวอย่างไว้
 
 ## Resources
-## Important Files in Repository
+### Important Files in Repository
 - [code_eda.R](./code_eda.R): Exploratory Data Analysis
 - [products_original.csv](./Movies-Netflix-PrimeVideo-Hulu-Disney-original.csv): Original Dataset
 - [products_clean.csv](./products_original.csv): Clean Dataset
