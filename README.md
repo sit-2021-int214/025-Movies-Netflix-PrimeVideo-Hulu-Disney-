@@ -19,12 +19,9 @@ Netflix, Hulu, Prime Video, Disney+, Type, Directors, Genres, Country, Language 
 6. ประเทศไหนที่ผลิตภาพยนตร์ออกมาเยอะที่สุด
 7. ในแต่ละปีภาพยนตร์เรื่องไหนได้รับคะแนนมากที่สุด
 ## Steps
-1. Search datasets from Kaggle
-2. Explore the dataset from the original dataset
-3. Define a question
-4. Download Library and dataset
-5. Cleaning Dataset
-6. Exploratory Data Analysis
+1. Explore the Movies_Netflix_PrimeVideo_Hulu_Disney+ 
+2. Cleaning Dataset and Data Transformation
+3. Data Analysis with Descriptive Statistics
 
 ## Tools
 - R Language
