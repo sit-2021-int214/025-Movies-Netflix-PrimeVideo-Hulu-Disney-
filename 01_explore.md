@@ -61,7 +61,26 @@ $ Language        <chr> "English,Italian,Latin,Spanish,German", "Hindi,English~
 $ Runtime         <int> 209, 161, 83, 224, 52, 99, 94, 120, 133, 129, 130, 94,~
 ```
 
-###
+| ลำดับ | ชื่อคอลัมน์              | คำอธิบาย         |  เก็บข้อมูลในรูปแบบ         | ตัวอย่างข้อมูล                        |
+| :--: | -------------------- | -----------     |  --------------------   | -------------------------------- |
+| 1    | Index of Manga       | ลำดับของมังงะ     | ...1 = col_double()     | 0, 1, 2, 3, 4, 5, 6, 7, 8, 9,... |
+| 2    | Title                | ชื่อเรื่องของมังงะ   | Title = col_character() | "Berserk", "JoJo no Kimyou na Bouken Part 7: Steel Ball Run",... |
+| 3    | Title_Synonym        | ชื่อเรียกแฝงของมังงะ| Title_Synonym = col_character()     | Doukyuusei ก็จะมีอีกชื่อเรียกว่า Classmates |
+| 4    | Title_Japanese       | ชื่อเรื่องของมังงะแบบภาษาญี่ปุ่น   | Title_Japanese = col_character() | "ベルセルク", "ジョジョの奇妙な冒険 Part7 STEEL BALL RUN",... |
+| 5    | Status               | มังงะเรื่องนี้มีสถานะเป็นอย่างไร (Finished=จบแล้ว / Publishing=อยู่ในระหว่างการตีพิมพ์ / On Hiatus=หยุดตีพิมพ์ชั่วคราว)    | Status = col_character()     | "Publishing", "Finished", "Publishing", "On Hiatus",… |
+| 6    | Volumns              | จำนวนเล่มที่ตีพิมพ์จนจบ หากถ้าเกิดเรื่องไหนยังไม่จบ ช่องนี้จะมีค่าเป็น unknown   | Volumns = col_character() | "unkown", "24.0", "unkown", "37.0",… |
+| 7    | Chapters        | จำนวนตอนของมังงะเรื่องนั้น ๆ จนจบ หากถ้าเกิดเรื่องไหนยังไม่จบ ช่องนี้จะมีค่าเป็น unknown| Chapters = col_character()     | "unkown", "96.0", "unkown", "327.0", "162.0", "116.0",... |
+| 8    | Publishing       | ชื่อเรื่องของมังงะแบบภาษาญี่ปุ่น   | Publishing = col_logical() | TRUE, FALSE, TRUE, FALSE, FALSE,... |
+| 9    | Rank        | อันดับของมังงะ โดยอิงจาก MAL(https://myanimelist.net)| Rank = col_double()     | 1, 2, 3, 4, 5, 6, 7, 8, 9,... |
+| 10   | Score        | คะแนนของมังงะเรื่องนั้น ๆ โดย MAL(https://myanimelist.net)| Score = col_double()     | 9.39, 9.23, 9.15, 9.13, 9.10,...|
+| 11   | Scored_by       | จำนวนคนที่โหวตให้กับมังงะเรื่องนั้น ๆ   | Scored_by = col_double() | 201756, 94427, 249936, 72613, 57801, 130375,... |
+| 12   | Popularity       | อันดับความนิยมของผู้อ่าน   | Popularity = col_double() | 2, 29, 3, 19, 33, 16, 10,... |
+| 13   | Memebers        | จำนวนผู้ใช้งานในเว็บไซต์ MAL(https://myanimelist.net) ที่เพิ่มมังงะเรื่องนั้นเข้าลิสต์มังงะที่อยากอ่าน (reading list) ของตนเอง| Memebers = col_double()     | 427894, 160782, 410522, 211345, 148764,... |
+| 14   | Favorites        | จำนวนผู้ใช้งานในเว็บไซต์ MAL(https://myanimelist.net) ที่เพิ่มมังงะเรื่องนั้นเข้าลิสต์มังงะที่ชื่นชอบ (favorite list) ของตนเอง| Favorites = col_double()     | 80308, 27459, 82310, 21596, 13049,... |
+| 15   | Synopsis       | เรื่องย่อของมังงะ   | Synopsis = col_character() | "Guts, a former mercenary now known as the \"Black... |
+| 16   | Publish_period        | ช่วงเวลาที่ตีพิมพ์ ตั้งแต่เริ่มต้นถึงสิ้นสุด หากเรื่องไหนยังไม่จบจะเขียนตอนท้ายว่า to present| Publish_period = col_character()     | "Aug  25, 1989 to present", "Jan  19, 2004 to Apr  19, 2011",... |
+| 17   | Genre       | ประเภทของมังงะเรื่องนั้น ๆ   | Genre = col_character() | Attack On Titan มีประเภทดังนี้ 'Action', 'Mystery', 'Drama', 'Fantasy', 'Shounen', 'Super Power', 'Military' |
+
 
 ## Step 4: Cleaning dataset
 ```
