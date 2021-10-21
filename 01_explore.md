@@ -60,25 +60,25 @@ $ Country         <chr> "United States", "India,United States,United Kingdom,A~
 $ Language        <chr> "English,Italian,Latin,Spanish,German", "Hindi,English~
 $ Runtime         <int> 209, 161, 83, 224, 52, 99, 94, 120, 133, 129, 130, 94,~
 ```
-
+จำนวนข้อมูลทั้งหมดมี 9,515
 | ลำดับ | ชื่อคอลัมน์              | คำอธิบาย         
 | :--: | -------------------- | -----------     
-| 1    | ID                |rgf | 
-| 2    | Title             | | 
-| 3    | Year              | | 
-| 4    | Age               | | 
-| 5    | IMDb              | | 
-| 6    | Rotten.Tomatoes   | | 
-| 7    | Netflix           | | 
-| 8    | Hulu              | | 
-| 9    | Prime.Video       | | 
-| 10   | Disney.           | | 
-| 11   | Type              | | 
-| 12   | Directors         | | 
-| 13   | Genres            | | 
-| 14   | Country           | | 
-| 15   | Language          | | 
-| 16   | Runtime           | | 
+| 1    | ID                | รหัสของหนังแต่ละเรื่อง | 
+| 2    | Title             | ชื่อของหนังแต่ละเรื่อง | 
+| 3    | Year              | ปีที่เริ่มฉายหนังแต่ละเรื่อง | 
+| 4    | Age               | เรทอายุของผู้เข้าชมหนังแต่ละเรื่อง | 
+| 5    | IMDb              | คะแนน IMDb ของหนังแต่ละเรื่องที่มีคะแนนสูงสุดคือ 10 คะแนน | 
+| 6    | Rotten.Tomatoes   | คะแนน Rotten.Tomatoes ของหนังแต่ละเรื่องที่มีคะแนนสูงสุดคือ 100 คะแนน | 
+| 7    | Netflix           | platform ที่ฉายหนัง โดยถ้า Netflix มีการฉายหนังเรื่องนั้น ก็จะแสดงเลข 1 | 
+| 8    | Hulu              | platform ที่ฉายหนัง โดยถ้า Hulu มีการฉายหนังเรื่องนั้น ก็จะแสดงเลข 1 | 
+| 9    | Prime.Video       | platform ที่ฉายหนัง โดยถ้า Prime.Video มีการฉายหนังเรื่องนั้น ก็จะแสดงเลข 1| 
+| 10   | Disney.           | platform ที่ฉายหนัง โดยถ้า Disney. มีการฉายหนังเรื่องนั้น ก็จะแสดงเลข 1 | 
+| 11   | Type              | บอกประเภทของหนังแต่ละเรื่องว่าเป็น movie หรือ series ถ้าเป็น movie จะแสดงเป็นเลข 0| 
+| 12   | Directors         | ผู้กำกับหนังแต่ละเรื่อง | 
+| 13   | Genres            | ประเภทของหนังแต่ละเรื่อง | 
+| 14   | Country           | ประเทศที่ไปสำรวจคะแนน IMDb และ คะแนน Rotten.Tomatoes มา| 
+| 15   | Language          | ภาษาที่รองรับหนังในแต่ละเรื่อง เช่น ภาษาอังกฤษ ภาษาเกาหลี | 
+| 16   | Runtime           | ระยะเวลาที่ฉายหนังเรื่องนั้น | 
 
 
 ## Step 4: Cleaning dataset
