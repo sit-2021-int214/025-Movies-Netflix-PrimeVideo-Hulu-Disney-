@@ -229,6 +229,7 @@ Thaandavam          A.L. Vijay
 Deiva Thirumagal    A.L. Vijay
 Abhinetri No. 1     A.L. Vijay
 ```
-จากข้อมูลแสดงให้เห็นว่าผู้กำกับที่ชื่อว่า A.L. Vijay กำกับหนังมาแล้ว 3 เรื่อง ได้แก่  1.Thaandavam  
+จากข้อมูลแสดงให้เห็นว่าผู้กำกับที่ชื่อว่า A.L. Vijay กำกับหนังมาแล้ว 3 เรื่อง ได้แก่  
+1.Thaandavam  
 2. Deiva Thirumagal 
 3. Abhinetri No. 1 
