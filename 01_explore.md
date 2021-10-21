@@ -2,6 +2,8 @@
 
 Dataset from [Movies_Netflix_PrimeVideo_Hulu_Disney+.csv](../../Movies-Netflix-PrimeVideo-Hulu-Disney-original.csv)
 
+![me](https://media.giphy.com/media/kaMwwM91UCxstRfvA3/giphy.gif)
+
 ### My Step ⚙️
 1. Define a question 🛠
 2. Loading Library and dataset 📡
