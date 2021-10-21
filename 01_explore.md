@@ -81,7 +81,7 @@ movies$IMDb <- movies$IMDb%>% str_remove("/10")%>%str_trim()%>%as.numeric()
 ```
 Result:
 ```
-IMDb `Rotten Tomatoe… Netflix  Hulu
+IMDb `Rotten Tomatoes`
 <dbl>            <dbl>   
 7.8               98     
 8.4               97      
