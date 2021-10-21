@@ -143,8 +143,12 @@ $ Runtime           <dbl> 209, 161, 83, 224, 52, 99, 94, 120, 133, 129, 130…
 
 ```
 ### Format Score ###
+จัด format ของคะแนน Rotten Tomatoes โดยลบ /100 ที่เป็นคะแนนเต็มออก และเปลี่ยน datatype จาก character เป็น numeric
 ```
 movies$`Rotten Tomatoes`<- movies$`Rotten Tomatoes`%>%str_remove("/100")%>%str_trim()%>%as.numeric()
+```
+จัด format ของคะแนน IMDb โดยลบ /10 ที่เป็นคะแนนเต็มออก และเปลี่ยน datatype จาก character เป็น numeric
+```
 movies$IMDb <- movies$IMDb%>% str_remove("/10")%>%str_trim()%>%as.numeric()
 ```
 Result:
