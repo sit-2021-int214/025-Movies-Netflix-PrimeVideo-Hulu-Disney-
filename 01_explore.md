@@ -142,7 +142,7 @@ $ Language          <chr> "English,Italian,Latin,Spanish,German", "Hindi,En…
 $ Runtime           <dbl> 209, 161, 83, 224, 52, 99, 94, 120, 133, 129, 130…
 
 ```
-### Format Score 🧹###
+### Format Score 🧹
 ```
 movies$`Rotten Tomatoes`<- movies$`Rotten Tomatoes`%>%str_remove("/100")%>%str_trim()%>%as.numeric()
 movies$IMDb <- movies$IMDb%>% str_remove("/10")%>%str_trim()%>%as.numeric()
