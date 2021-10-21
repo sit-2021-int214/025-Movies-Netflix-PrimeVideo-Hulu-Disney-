@@ -79,6 +79,18 @@ movies$Language <- movies$Language%>%replace(is.na(movies$Language),"UNKNOWN")
 movies$`Rotten Tomatoes`<- movies$`Rotten Tomatoes`%>%str_remove("/100")%>%str_trim()%>%as.numeric()
 movies$IMDb <- movies$IMDb%>% str_remove("/10")%>%str_trim()%>%as.numeric()
 ```
+Result:
+```
+   ...1    ID Title           Year Age    IMDb `Rotten Tomatoe… Netflix  Hulu
+  <dbl> <dbl> <chr>          <dbl> <chr> <dbl>            <dbl>   <dbl> <dbl>
+1     0     1 The Irishman    2019 18+     7.8               98       1     0
+2     1     2 Dangal          2016 7+      8.4               97       1     0
+3     2     3 David Attenbo…  2020 7+      9                 95       1     0
+4     3     4 Lagaan: Once …  2001 7+      8.1               94       1     0
+5     4     5 Roma            2018 18+     7.7               94       1     0
+6     5     6 To All the Bo…  2018 13+     7.1               94       1     0
+
+```
 ### Explain:
 - แก้ column Age ที่ไม่มีข้อมูลอายุ(NA) ให้เป็น "all" ทั้งหมด
 - แก้ column Directors ที่ไม่มีผู้กำกับ(NA) ให้เป็น "UNKNOWN" ทั้งหมด
