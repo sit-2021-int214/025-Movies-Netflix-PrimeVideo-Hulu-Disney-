@@ -33,6 +33,7 @@ movies%>% select(Age)%>% filter(movies$IMDb<5)
 movies%>% select(movies$Title)
 # duplicated check
 movies%>%duplicated()%>% table()
+#Questions
 #1
 IMDb_avg<-(movies%>% select(IMDb)%>% filter(movies$IMDb>0)%>%sum() ) / count(movies)
 print(IMDb_avg)
