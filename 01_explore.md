@@ -83,10 +83,15 @@ $ Runtime         <int> 209, 161, 83, 224, 52, 99, 94, 120, 133, 129, 130, 94,~
 
 
 ## Step 4: Cleaning dataset
-ลบ column 
+ลบ column Type ออก 
 ```
 movies <- select(movies,-c(Type))
+```
+ลบ column X ออก 
+```
 movies<- select(movies,-c(...1))
+```
+
 movies$Age<- movies$Age%>%replace(is.na(movies$Age),"all")
 movies$Directors <- movies$Directors%>%replace(is.na(movies$Directors),"UNKNOWN")
 movies$IMDb<- movies$IMDb%>% replace(is.na(movies$IMDb),"0/10")
