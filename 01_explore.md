@@ -169,7 +169,18 @@ IMDb          `Rotten Tomatoes`
 7.1                  94       
 ```
 
-### Data after Format Score
+### 4.4 Check duplicated data ###
+check ว่า dataset ที่นำมามีข้อมูลที่ซ้ำกันหรือไม่ 
+```
+movies %>% duplicated() %>% table() 
+```
+Result : 
+```
+FALSE
+```
+จากการตรวจสอบพบว่า dataset ที่นำมาไม่มีข้อมูลที่ซ้ำกัน
+
+### Data after Cleaning
 ```
 Rows: 9,515
 Columns: 15
@@ -189,17 +200,6 @@ $ Country           <chr> "United States", "India,United States,United Kingdom~
 $ Language          <chr> "English,Italian,Latin,Spanish,German", "Hindi,Engli~
 $ Runtime           <dbl> 209, 161, 83, 224, 52, 99, 94, 120, 133, 129, 130, 9~
 ```
-
-### 4.4 Check duplicated data ###
-check ว่า dataset ที่นำมามีข้อมูลที่ซ้ำกันหรือไม่ 
-```
-movies %>% duplicated() %>% table() 
-```
-Result : 
-```
-FALSE
-```
-จากการตรวจสอบพบว่า dataset ที่นำมาไม่มีข้อมูลที่ซ้ำกัน
 
 ## Step 5: Data Analysis with Descriptive Statistics 📇
 
