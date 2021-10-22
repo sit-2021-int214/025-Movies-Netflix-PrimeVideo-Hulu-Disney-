@@ -24,7 +24,7 @@ Dataset from [Movies_Netflix_PrimeVideo_Hulu_Disney+.csv](./Movies-Netflix-Prime
 ```
 # Library
 library(readr)
-library(deplyr)
+library(dplyr)
 library(assertive)
 library(stringr)
 
