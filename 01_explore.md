@@ -128,6 +128,27 @@ movies$Genres <- movies$Genres %>% replace(is.na(movies$Genres),"UNKNOWN")
 movies$Language <- movies$Language %>% replace(is.na(movies$Language),"UNKNOWN")
 ```
 
+### Data after cleaning
+```
+Rows: 9,515
+Columns: 15
+$ ID                <int> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 1~
+$ Title             <chr> "The Irishman", "Dangal", "David Attenborough: A Lif~
+$ Year              <int> 2019, 2016, 2020, 2001, 2018, 2018, 2020, 2017, 2018~
+$ Age               <chr> "18+", "7+", "7+", "7+", "18+", "13+", "13+", "13+",~
+$ IMDb              <chr> "7.8/10", "8.4/10", "9.0/10", "8.1/10", "7.7/10", "7~
+$ Rotten.Tomatoes   <chr> "98/100", "97/100", "95/100", "94/100", "94/100", "9~
+$ Netflix           <int> 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1~
+$ Hulu              <int> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0~
+$ Prime.Video       <int> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0~
+$ Disney.           <int> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0~
+$ Directors         <chr> "Martin Scorsese", "Nitesh Tiwari", "Alastair Fother~
+$ Genres            <chr> "Biography,Crime,Drama", "Action,Biography,Drama,Spo~
+$ Country           <chr> "United States", "India,United States,United Kingdom~
+$ Language          <chr> "English,Italian,Latin,Spanish,German", "Hindi,Engli~
+$ Runtime           <dbl> 209, 161, 83, 224, 52, 99, 94, 120, 133, 129, 130, 9~
+```
+
 ### 4.3 Format Score ###
 1. จัด format ของคะแนน Rotten Tomatoes โดยลบ /100 ที่เป็นคะแนนเต็มออก และเปลี่ยน datatype จาก character เป็น numeric
 ```
@@ -148,18 +169,8 @@ IMDb          `Rotten Tomatoes`
 7.7                  94       
 7.1                  94       
 ```
-### 4.4 Check duplicated data ###
-check ว่า dataset ที่นำมามีข้อมูลที่ซ้ำกันหรือไม่ 
-```
-movies %>% duplicated() %>% table() 
-```
-Result : 
-```
-FALSE
-```
-จากการตรวจสอบพบว่า dataset ที่นำมาไม่มีข้อมูลที่ซ้ำกัน
 
-### Data after cleaning
+### Data after Format Score
 ```
 Rows: 9,515
 Columns: 15
@@ -179,6 +190,17 @@ $ Country           <chr> "United States", "India,United States,United Kingdom~
 $ Language          <chr> "English,Italian,Latin,Spanish,German", "Hindi,Engli~
 $ Runtime           <dbl> 209, 161, 83, 224, 52, 99, 94, 120, 133, 129, 130, 9~
 ```
+
+### 4.4 Check duplicated data ###
+check ว่า dataset ที่นำมามีข้อมูลที่ซ้ำกันหรือไม่ 
+```
+movies %>% duplicated() %>% table() 
+```
+Result : 
+```
+FALSE
+```
+จากการตรวจสอบพบว่า dataset ที่นำมาไม่มีข้อมูลที่ซ้ำกัน
 
 ## Step 5: Data Analysis with Descriptive Statistics 📇
 
