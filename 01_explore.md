@@ -178,11 +178,11 @@ $ Title             <chr> "The Irishman", "Dangal", "David Attenborough: A Lif~
 $ Year              <int> 2019, 2016, 2020, 2001, 2018, 2018, 2020, 2017, 2018~
 $ Age               <chr> "18+", "7+", "7+", "7+", "18+", "13+", "13+", "13+",~
 $ IMDb              <dbl> 7.8, 8.4, 9.0, 8.1, 7.7, 7.1, 7.6, 7.3, 7.3, 7.8, 8.~
-$ Rotten.Tomatoes   <dbl> 98, 97, 95, 94, 94, 94, 93, 92, 92, 92, 92, 92, 92, ~
+$ `Rotten Tomatoes` <dbl> 98, 97, 95, 94, 94, 94, 93, 92, 92, 92, 92, 92, 92, ~
 $ Netflix           <int> 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1~
 $ Hulu              <int> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0~
-$ Prime.Video       <int> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0~
-$ Disney.           <int> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0~
+$ `Prime Video`     <int> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0~
+$ `Disney+`         <int> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0~
 $ Directors         <chr> "Martin Scorsese", "Nitesh Tiwari", "Alastair Fother~
 $ Genres            <chr> "Biography,Crime,Drama", "Action,Biography,Drama,Spo~
 $ Country           <chr> "United States", "India,United States,United Kingdom~
