@@ -172,7 +172,11 @@ IMDb          `Rotten Tomatoes`
 ### 4.4 Check duplicated data ###
 check ว่า dataset ที่นำมามีข้อมูลที่ซ้ำกันหรือไม่ 
 ```
-movies%>%duplicated()%>% table() #FALSE
+movies%>%duplicated()%>% table() 
+```
+Result : 
+```
+FALSE
 ```
 จากการตรวจสอบพบว่า dataset ที่นำมาไม่มีข้อมูลที่ซ้ำกัน
 
