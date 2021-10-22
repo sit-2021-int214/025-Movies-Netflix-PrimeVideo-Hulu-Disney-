@@ -39,7 +39,7 @@ Netflix, Hulu, Prime Video, Disney+, Type, Directors, Genres, Country, Language 
 ### Important Files in Repository
 - [code_eda.R](./code_eda.R): Exploratory Data Analysis
 - [products_original.csv](./Movies-Netflix-PrimeVideo-Hulu-Disney-original.csv): Original Dataset
-- [products_clean.csv](./products_original.csv): Clean Dataset
+- [products_clean.csv](./Movies-Netflix-PrimeVideo-Hulu-Disney-Cleaning.csv): Clean Dataset
 
 ## About Us
 งานนี้เป็นส่วนของวิชา INT214 Statistics for Information technology <br/> ภาคเรียนที่ 1 ปีการศึกษา 2564 คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
