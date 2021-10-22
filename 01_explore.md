@@ -41,23 +41,23 @@ Result:
 ```
 Rows: 9,515
 Columns: 17
-$ ...1            <int> 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, ~
-$ ID              <int> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,~
-$ Title           <chr> "The Irishman", "Dangal", "David Attenborough: A Life ~
-$ Year            <int> 2019, 2016, 2020, 2001, 2018, 2018, 2020, 2017, 2018, ~
-$ Age             <chr> "18+", "7+", "7+", "7+", "18+", "13+", "13+", "13+", "~
-$ IMDb            <chr> "7.8/10", "8.4/10", "9.0/10", "8.1/10", "7.7/10", "7.1~
+$ ...1              <int> 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, ~
+$ ID                <int> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,~
+$ Title             <chr> "The Irishman", "Dangal", "David Attenborough: A Life ~
+$ Year              <int> 2019, 2016, 2020, 2001, 2018, 2018, 2020, 2017, 2018, ~
+$ Age               <chr> "18+", "7+", "7+", "7+", "18+", "13+", "13+", "13+", "~
+$ IMDb              <chr> "7.8/10", "8.4/10", "9.0/10", "8.1/10", "7.7/10", "7.1~
 $ `Rotten Tomatoes` <chr> "98/100", "97/100", "95/100", "94/100", "94/100", "94/~
-$ Netflix         <int> 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ~
-$ Hulu            <int> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ~
+$ Netflix           <int> 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ~
+$ Hulu              <int> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ~
 $ `Prime Video`     <int> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ~
 $ `Disney+`         <int> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ~
-$ Type            <int> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ~
-$ Directors       <chr> "Martin Scorsese", "Nitesh Tiwari", "Alastair Fothergi~
-$ Genres          <chr> "Biography,Crime,Drama", "Action,Biography,Drama,Sport~
-$ Country         <chr> "United States", "India,United States,United Kingdom,A~
-$ Language        <chr> "English,Italian,Latin,Spanish,German", "Hindi,English~
-$ Runtime         <int> 209, 161, 83, 224, 52, 99, 94, 120, 133, 129, 130, 94,~
+$ Type              <int> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ~
+$ Directors         <chr> "Martin Scorsese", "Nitesh Tiwari", "Alastair Fothergi~
+$ Genres            <chr> "Biography,Crime,Drama", "Action,Biography,Drama,Sport~
+$ Country           <chr> "United States", "India,United States,United Kingdom,A~
+$ Language          <chr> "English,Italian,Latin,Spanish,German", "Hindi,English~
+$ Runtime           <int> 209, 161, 83, 224, 52, 99, 94, 120, 133, 129, 130, 94,~
 ```
 จำนวนข้อมูลเริ่มต้นมีทั้งหมด 9,515 rows และมีทั้งหมด 17 column
 | ลำดับ | ชื่อคอลัมน์              | คำอธิบาย         
