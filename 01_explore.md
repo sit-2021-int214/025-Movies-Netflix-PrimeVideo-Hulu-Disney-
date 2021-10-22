@@ -122,10 +122,6 @@ movies$Genres <- movies$Genres%>%replace(is.na(movies$Genres),"UNKNOWN")
 ```
 movies$Language <- movies$Language%>%replace(is.na(movies$Language),"UNKNOWN")
 ```
-4.11 check ว่า dataset ที่นำมามีข้อมูลที่ซ้ำกันหรือไม่ ซึ่งในที่นี้ไม่มีข้อมูลที่ซ้ำกัน
-```
-movies%>%duplicated()%>% table() #FALSE
-```
 Result:
 ```
 Rows: 9,515
@@ -146,6 +142,10 @@ $ Country           <chr> "United States", "India,United States,United King…
 $ Language          <chr> "English,Italian,Latin,Spanish,German", "Hindi,En…
 $ Runtime           <dbl> 209, 161, 83, 224, 52, 99, 94, 120, 133, 129, 130…
 
+```
+4.11 check ว่า dataset ที่นำมามีข้อมูลที่ซ้ำกันหรือไม่ ซึ่งในที่นี้ไม่มีข้อมูลที่ซ้ำกัน
+```
+movies%>%duplicated()%>% table() #FALSE
 ```
 ### Format Score ###
 1. จัด format ของคะแนน Rotten Tomatoes โดยลบ /100 ที่เป็นคะแนนเต็มออก และเปลี่ยน datatype จาก character เป็น numeric
