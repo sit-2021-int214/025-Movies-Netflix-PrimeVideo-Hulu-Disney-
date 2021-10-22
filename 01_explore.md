@@ -94,7 +94,7 @@ movies <- select(movies,-c(Type))
 movies<- select(movies,-c(...1))
 ```
 
-### 4.2 Delete Column ###
+### 4.2 Replace null data in column ###
 
 4.3 แก้ column Age ที่ไม่มีข้อมูลอายุ(NA) ให้เป็น "all" ทั้งหมด
 ```
