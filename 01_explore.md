@@ -88,7 +88,7 @@ movies <- select(movies,-c(Type))
 ```
 4.2 ลบ column X ออก เพราะว่าเป็น column ที่แสดงลำดับเฉยๆ
 ```
-movies<- select(movies,-c(...1))
+movies<- select(movies,-c(X))
 ```
 4.3 แก้ column Age ที่ไม่มีข้อมูลอายุ(NA) ให้เป็น "all" ทั้งหมด
 ```
@@ -104,7 +104,7 @@ movies$IMDb<- movies$IMDb%>% replace(is.na(movies$IMDb),"0/10")
 ```
 4.6 แก้ column Rotten Tomatoes ที่ไม่มีคะแนน(NA) ให้เป็น "0/100" ทั้งหมด
 ```
-movies$`Rotten Tomatoes`<- movies$`Rotten Tomatoes`%>% replace(is.na(movies$`Rotten Tomatoes`),"0/100")
+movies$`Rotten.Tomatoes`<- movies$`Rotten.Tomatoes`%>% replace(is.na(movies$`Rotten.Tomatoes`),"0/100")
 ```
 4.7 แก้ column Country ที่ไม่ระบุประเทศ(NA) ให้เป็น "UNKNOWN" ทั้งหมด
 ```
@@ -131,7 +131,7 @@ $ Title             <chr> "The Irishman", "Dangal", "David Attenborough: A …
 $ Year              <dbl> 2019, 2016, 2020, 2001, 2018, 2018, 2020, 2017, 2…
 $ Age               <chr> "18+", "7+", "7+", "7+", "18+", "13+", "13+", "13…
 $ IMDb              <chr> "7.8/10", "8.4/10", "9.0/10", "8.1/10", "7.7/10",…
-$ `Rotten Tomatoes` <chr> "98/100", "97/100", "95/100", "94/100", "94/100",…
+$ `Rotten.Tomatoes` <chr> "98/100", "97/100", "95/100", "94/100", "94/100",…
 $ Netflix           <dbl> 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1…
 $ Hulu              <dbl> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0…
 $ `Prime Video`     <dbl> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0…
@@ -146,7 +146,7 @@ $ Runtime           <dbl> 209, 161, 83, 224, 52, 99, 94, 120, 133, 129, 130…
 ### Format Score ###
 1. จัด format ของคะแนน Rotten Tomatoes โดยลบ /100 ที่เป็นคะแนนเต็มออก และเปลี่ยน datatype จาก character เป็น numeric
 ```
-movies$`Rotten Tomatoes`<- movies$`Rotten Tomatoes`%>%str_remove("/100")%>%str_trim()%>%as.numeric()
+movies$`Rotten.Tomatoes`<- movies$`Rotten.Tomatoes`%>%str_remove("/100")%>%str_trim()%>%as.numeric()
 ```
 2. จัด format ของคะแนน IMDb โดยลบ /10 ที่เป็นคะแนนเต็มออก และเปลี่ยน datatype จาก character เป็น numeric
 ```
@@ -183,7 +183,7 @@ Result:```6.023027```
 
 ### 5.2. อยากทราบว่าหนังที่ได้ทำการสำรวจมาทุกเรื่องมีค่าเฉลี่ยของคะแนน Rotten Tomatoes มีค่าเฉลี่ยเป็นเท่าไหร่ ?
 ```
-rotten_avg<-(movies%>% select(`Rotten Tomatoes`)%>% filter(movies$`Rotten Tomatoes`>0)%>%
+rotten_avg<-(movies%>% select(`Rotten.Tomatoes`)%>% filter(movies$`Rotten.Tomatoes`>0)%>%
 sum() ) / count(movies)
 ```
 Result:```53.50562```
