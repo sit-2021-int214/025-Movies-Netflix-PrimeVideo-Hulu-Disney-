@@ -88,7 +88,7 @@ $ Runtime           <int> 209, 161, 83, 224, 52, 99, 94, 120, 133, 129, 130, 94,
 ```
 movies <- select(movies,-c(Type))
 ```
-2 ลบ column ...1 ออก เพราะว่าเป็น column ที่แสดงลำดับเฉยๆ
+2. ลบ column ...1 ออก เพราะว่าเป็น column ที่แสดงลำดับเฉยๆ
 ```
 movies<- select(movies,-c(...1))
 ```
