@@ -127,8 +127,7 @@ movies$Genres <- movies$Genres %>% replace(is.na(movies$Genres),"UNKNOWN")
 ```
 movies$Language <- movies$Language %>% replace(is.na(movies$Language),"UNKNOWN")
 ```
-
-### Data after cleaning
+Result :
 ```
 Rows: 9,515
 Columns: 15
