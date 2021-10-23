@@ -256,9 +256,9 @@ FALSE   TRUE
 
 ### 5.6. อยากทราบว่าผู้กำกับที่มีชื่อว่า A.L. Vijay กำกับหนังมาแล้วกี่เรื่องและเรื่องอะไรบ้าง ?
 ```
-director <- movies %>% select(Title,Directors) %>% filter(movies$Directors =="A.L. Vijay")
-
 director %>% count()
+
+director <- movies %>% select(Title,Directors) %>% filter(movies$Directors =="A.L. Vijay")
 ```
 Result:```Director = 3```
 ```
