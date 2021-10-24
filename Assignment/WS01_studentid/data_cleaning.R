@@ -1,6 +1,7 @@
 
+
 library(readr)
-library(deplyr)
+library(dplyr)
 library(assertive)
 library(stringr)
 movies <- read_csv("MoviesOnStreamingPlatforms_updated.csv")
@@ -16,7 +17,8 @@ movies$Genres <- movies$Genres%>%replace(is.na(movies$Genres),"UNKNOWN")
 movies$Language <- movies$Language%>%replace(is.na(movies$Language),"UNKNOWN")
 # drop column TYPE
 movies <- select(movies,-c(Type))
-
+# drop column ..1
+movies<- select(movies,-c(...1))
 # format score
 movies$`Rotten Tomatoes`<- movies$`Rotten Tomatoes`%>%str_remove("/100")%>%str_trim()%>%as.numeric()
 movies$IMDb <- movies$IMDb%>% str_remove("/10")%>%str_trim()%>%as.numeric()
@@ -58,3 +60,10 @@ print(movie_90)
  director%>% count()
 
 View(movies)
+movies%>% head(6)
+glimpse(movies)
+
+
+#table แยกประเภท
+movies$Netflix%>% table()
+
