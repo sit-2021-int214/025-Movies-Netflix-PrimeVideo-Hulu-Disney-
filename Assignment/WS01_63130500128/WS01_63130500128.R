@@ -1,7 +1,7 @@
 # Student_ID
 # Step 0
 library(dplyr)
-
+sat_score <- read_csv("https://raw.githubusercontent.com/safesit23/INT214-Statistics/main/datasets/SAT_original.csv")
 # Explore
 
 # xxxx
