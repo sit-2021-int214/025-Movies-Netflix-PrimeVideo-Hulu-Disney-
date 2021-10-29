@@ -35,7 +35,7 @@ sale %>% slice(2:5)
 #sample
 s_sample <- sale %>% sample_n(6) %>% select(customer_id,order_date,product_name,Sales)
 
-#top_nØ
+#top_nÃ˜
 sale %>% top_n(5, no)
 
 #tally
@@ -71,7 +71,7 @@ sale %>% filter(State=="Texas") %>% ggplot(aes(x= Category)) + geom_bar() + ggti
 
 sale %>% ggplot(aes(x=State , y=Sales)) + geom_point()
 
-#from the second graph what are the 2 outiers
+#from the second graph what are the 2 outliers
 sale %>% filter(Sales > 15000) %>% select(State, Sales)
 
 
