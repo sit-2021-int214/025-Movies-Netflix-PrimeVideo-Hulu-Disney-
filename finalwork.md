@@ -30,21 +30,36 @@ sample_drama<- allDrama%>%sample_n(2500)
 ### 3.3 คำนวณหา variance และ mean ของแต่ละชนิด
 ### Comedy
 ```
-comedy<-var(sample_comedy)
-comedy<-c(variance=comedy,mean=mean(sample_comedy$score))
+comedy<-data.frame(variance=var(sample_comedy$score),mean=mean(sample_comedy$score))
+
 #Variance:1.192355 
 #Mean:5.732800 
 ```
 ### Drama
 ```
-drama<-var(sample_drama)
-drama<-c(variance=drama,mean=mean(sample_drama$score))
+drama<-data.frame(variance=var(sample_drama$score),mean=mean(sample_drama$score))
+
 
 #Variance:1.170136
 #Mean:5.910280 
 ```
+### 3.4 คำนวณหา T-test
+```
+t_score<- (drama$mean-comedy$mean)/ sqrt(drama$variance/2500+comedy$variance/2500)
+# T-score : 5.773435
+```
+### 3.5 หาค่า P-value ของ t
+```
+t_area<- pt(t_score,2499)
 
+p-value: 0.9999
+```
+### 3.6 หาค่า critical value โดย alpha=0.05
+```
+t_alpha<- qt(0.05,2499)
 
+critical value: -1.645464
+```
 
 
 ## Step 4 สรุป
