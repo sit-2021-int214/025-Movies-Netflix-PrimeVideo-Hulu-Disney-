@@ -27,6 +27,17 @@ sample_comedy<-allComedy%>%sample_n(2500)
 ```
 sample_drama<- allDrama%>%sample_n(2500)
 ```
+### 3.3 คำนวณหา variance ของแต่ละชนิด
+### Comedy
+```
+var_comedy<-var(sample_comedy)
+Result : 1.163742
+```
+### Drama
+```
+var_drama<-var(sample_drama)
+Result : 1.234671
+```
 
 
 
