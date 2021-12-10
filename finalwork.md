@@ -5,7 +5,7 @@
 
 ## Step 3 ทดสอบสมมติฐาน
 
-### - เลือกข้อมูลตามประเภทของหนัง
+### 3.1 เลือกข้อมูลตามประเภทของหนัง
 ### Comedy
 ```
 allComedy <-movies%>%filter(!is.na(str_extract(Genres,"Comedy")))%>%select(IMDb,Rotten.Tomatoes/10)
@@ -18,6 +18,16 @@ allDrama<- movies%>%filter(!is.na(str_extract(Genres,"Drama")))%>%select(IMDb,Ro
 allDrama<-allDrama%>%mutate(usable=((allDrama$Rotten.Tomatoes/10)+allDrama$IMDb)/2)
 allDrama<- data.frame(score=allDrama$usable)
 ```
+### 3.2 สุ่ม sample จากชุดข้อมูลมาชนิดละ 2500 record
+#Comedy
+```
+sample_comedy<-allComedy%>%sample_n(2500)
+```
+### Drama
+```
+sample_drama<- allDrama%>%sample_n(2500)
+```
+
 
 
 ## Step 4 สรุป
