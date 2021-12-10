@@ -43,11 +43,7 @@ drama<-c(variance=drama,mean=mean(sample_drama$score))
 #Variance:1.170136
 #Mean:5.910280 
 ```
-### Drama
-```
-var_drama<-var(sample_drama)
-Result : 1.234671
-```
+
 
 
 
