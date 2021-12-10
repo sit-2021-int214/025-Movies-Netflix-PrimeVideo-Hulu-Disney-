@@ -63,4 +63,27 @@ critical value: -1.645464
 
 
 ## Step 4 สรุป
-
+### สรุปด้วย P-value
+```
+if(t_area<0.05){
+  print("reject H0")
+}else{
+  print("not reject H0")
+}
+```
+## Result
+```
+"not reject H0"
+```
+### สรุปด้วย Critical value
+```
+if(t_alpha>t_score){
+  print("reject H0")
+}else{
+  print("not reject H0")
+}
+```
+## Result
+```
+"not reject H0"
+```
