@@ -4,86 +4,63 @@
 ## Step 2 ตั้งสมมติฐาน
 
 ## Step 3 ทดสอบสมมติฐาน
+### 3.1 ประกาศตัวแปร
+```
+num_comedy<-234
+n<-780
+alpha <0.05
+p0<- 0.31
 
-### 3.1 เลือกข้อมูลตามประเภทของหนัง
-### Comedy
 ```
-allComedy <-movies%>%filter(!is.na(str_extract(Genres,"Comedy")))%>%select(IMDb,Rotten.Tomatoes/10)
-allComedy<-allComedy%>%mutate(usable=((allComedy$Rotten.Tomatoes/10)+allComedy$IMDb)/2)
-allComedy<- data.frame(score=allComedy$usable)
+### 3.2 คำนวณหา P-bar
 ```
-### Drama
-```
-allDrama<- movies%>%filter(!is.na(str_extract(Genres,"Drama")))%>%select(IMDb,Rotten.Tomatoes/10)
-allDrama<-allDrama%>%mutate(usable=((allDrama$Rotten.Tomatoes/10)+allDrama$IMDb)/2)
-allDrama<- data.frame(score=allDrama$usable)
-```
-### 3.2 สุ่ม sample จากชุดข้อมูลมาชนิดละ 2500 record
-#Comedy
-```
-sample_comedy<-allComedy%>%sample_n(2500)
-```
-### Drama
-```
-sample_drama<- allDrama%>%sample_n(2500)
-```
-### 3.3 คำนวณหา variance และ mean ของแต่ละชนิด
-### Comedy
-```
-comedy<-data.frame(variance=var(sample_comedy$score),mean=mean(sample_comedy$score))
+se_of_p<- sqrt(p0*(1-p0)/n)
+p_bar<- num_comedy/n
 
-#Variance:1.192355 
-#Mean:5.732800 
+p_bar : 0.3
 ```
-### Drama
+### 3.3 คำนวณหาค่า z
 ```
-drama<-data.frame(variance=var(sample_drama$score),mean=mean(sample_drama$score))
+z<- (p_bar-p0)/se_of_p
 
+z : -0.6038679
+```
+### 3.4 หา P-value ของ z
+```
+p_value<- pnorm(z)
 
-#Variance:1.170136
-#Mean:5.910280 
-```
-### 3.4 คำนวณหา T-test
-```
-t_score<- (drama$mean-comedy$mean)/ sqrt(drama$variance/2500+comedy$variance/2500)
-# T-score : 5.773435
-```
-### 3.5 หาค่า P-value ของ t
-```
-t_area<- pt(t_score,2499)
+p_value: 0.2729658
 
-p-value: 0.9999
 ```
-### 3.6 หาค่า critical value โดย alpha=0.05
+### 3.5 หา critical value ของ alpha
 ```
-t_alpha<- qt(0.05,2499)
+critical_value<- qnorm(0.05/2)
 
-critical value: -1.645464
+critical_value : -1.959964
 ```
-
 
 ## Step 4 สรุป
 ### สรุปด้วย P-value
 ```
-if(t_area<0.05){
+if(p_value*2<0.05){
   print("reject H0")
 }else{
-  print("not reject H0")
+  print("accept H0")
 }
 ```
 ## Result
 ```
-"not reject H0"
+"accept H0"
 ```
 ### สรุปด้วย Critical value
 ```
-if(t_alpha>t_score){
+if(critical_value>p_value){
   print("reject H0")
 }else{
-  print("not reject H0")
+  print("Accept H0")
 }
 ```
 ## Result
 ```
-"not reject H0"
+"accept reject H0"
 ```
