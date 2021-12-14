@@ -34,9 +34,9 @@ Netflix, Hulu, Prime Video, Disney+, Type, Directors, Genres, Country, Language 
 ## Table of Contents
 1. [Exploratory Data Analysis](./01_explore.md)
 2. [Data Visualization](https://app.powerbi.com/view?r=eyJrIjoiMDI2Y2Y2ZGMtMWY4ZS00NzkxLTk1NzMtYzUxNDA0NjliNTc1IiwidCI6IjZmNDQzMmRjLTIwZDItNDQxZC1iMWRiLWFjMzM4MGJhNjMzZCIsImMiOjEwfQ%3D%3D)
-3. [Hypo1](./HypothesisTesting1.md)
-4. [Hypo2](./HypothesisTesting2.md)
-5. [Hypo3](./HypothesisTesting3.md)
+3. [HypothesisTesting1](./HypothesisTesting1.md)
+4. [HypothesisTesting2](./HypothesisTesting2.md)
+5. [HypothesisTesting3](./HypothesisTesting3.md)
 
 ## Resources
 ### Important Files in Repository
