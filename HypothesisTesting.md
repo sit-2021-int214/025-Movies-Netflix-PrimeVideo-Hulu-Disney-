@@ -65,5 +65,5 @@ if(critical_value>p_value){
 ```
 ## Result
 ```
-"accept reject H0"
+"accept H0"
 ```
